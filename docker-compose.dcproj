@@ -14,11 +14,6 @@
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>
     <None Include="docker-compose.yml" />
-    <None Include=".dockerignore" />
-    <None Include="src\Ambev.DeveloperEvaluation.WebApi\Features\Sale\GetSale\GetSaleProfile.cs" />
-    <None Include="src\Ambev.DeveloperEvaluation.WebApi\Features\Sale\GetSale\GetSaleRequest.cs" />
-    <None Include="src\Ambev.DeveloperEvaluation.WebApi\Features\Sale\GetSale\GetSaleRequestValidator.cs" />
-    <None Include="src\Ambev.DeveloperEvaluation.WebApi\Features\Sale\GetSale\GetSaleResponse.cs" />
-    <None Include="src\Ambev.DeveloperEvaluation.WebApi\Features\Sale\SalesController.cs" />
+    <None Include=".dockerignore" />   
   </ItemGroup>
 </Project>

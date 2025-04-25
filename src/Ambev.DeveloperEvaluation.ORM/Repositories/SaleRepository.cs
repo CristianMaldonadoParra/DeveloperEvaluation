@@ -60,7 +60,10 @@ namespace Ambev.DeveloperEvaluation.ORM.Repositories
         /// </summary>
         public async Task<bool> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
         {
-            var sale = await GetByIdAsync(id, cancellationToken);
+            var sale = await _context.Sales
+                .Include(s => s.SaleItems)
+                .FirstOrDefaultAsync(s => s.Id == id, cancellationToken);
+
             if (sale == null)
                 return false;
 
