@@ -4,6 +4,18 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Sale\DeleteSale\DeleteSaleCommand.cs" />
+    <Compile Remove="Sale\DeleteSale\DeleteSaleHandler.cs" />
+    <Compile Remove="Sale\DeleteSale\DeleteSaleResponse.cs" />
+    <Compile Remove="Sale\DeleteSale\DeleteSaleValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sale\DeleteSale\DeleteSaleCommand.cs" />
+    <None Include="Sale\DeleteSale\DeleteSaleHandler.cs" />
+    <None Include="Sale\DeleteSale\DeleteSaleResponse.cs" />
+    <None Include="Sale\DeleteSale\DeleteSaleValidator.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Ambev.DeveloperEvaluation.Domain\Ambev.DeveloperEvaluation.Domain.csproj" />
